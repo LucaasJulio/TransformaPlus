@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T+ | Contato</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS da página -->
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+
+  <!-- 🔹 HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="imagens/logo.png" alt="Logo T+" class="logo-tmais">
+      </div>
+
+      <ul class="menu">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="voluntarios.html">Voluntários</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔹 SEÇÃO HERO -->
+  <section class="hero-contato">
+    <div class="hero-texto">
+      <h1>Fale Conosco</h1>
+      <p>Quer saber mais sobre o T+? Envie sua mensagem e entraremos em contato com você!</p>
+    </div>
+  </section>
+
+  <!-- 🔹 FORMULÁRIO DE CONTATO -->
+  <section class="contato">
+    <div class="container-contato">
+      <div class="form-area">
+        <h2>Envie uma Mensagem</h2>
+        <form action="#" method="post" class="form-contato">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </div>
+
+      <!-- 🔹 INFORMAÇÕES DE CONTATO -->
+      <div class="info-area">
+        <h2>Informações</h2>
+        <p><strong>E-mail:</strong> contato@transforma.org</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        <p><strong>Endereço:</strong> Rua Esperança, 123 - São Paulo/SP</p>
+
+        <h3>Siga o T+</h3>
+        <div class="redes-sociais">
+          <a href="#" class="icon">📘</a>
+          <a href="#" class="icon">📸</a>
+          <a href="#" class="icon">🎥</a>
+          <a href="#" class="icon">💬</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 MAPA ILUSTRATIVO -->
+  <section class="mapa">
+    <h2>Onde Estamos</h2>
+    <div class="mapa-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8859770935684!2d-46.65598288502104!3d-23.575733768533898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cdb7a0b7cf%3A0x2c11c157356c69d!2sPaulista%20Avenida%20-%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- 🔹 RODAPÉ -->
+  <footer>
+    <p>© 2025 Transforma+ | Todos os direitos reservados.</p>
+  </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

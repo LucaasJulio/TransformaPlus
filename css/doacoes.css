@@ -1,0 +1,253 @@
+/* 🔹 RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verde: #10B981;
+  --bege: #EDE3CC;
+  --branco: #FFFFFF;
+}
+
+/* 🔹 CONFIGURAÇÃO GLOBAL */
+body {
+  background:
+    linear-gradient(to right, rgba(237, 227, 204, 0.9), rgba(16, 185, 129, 0.3)),
+    url("imagens/fundo.svg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🔹 HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(16, 185, 129, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+}
+
+.logo-tmais {
+  width: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--branco);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.menu a:hover {
+  color: #D1FAE5;
+}
+.menu .ativo {
+  color: #D1FAE5;
+}
+
+/* 🔹 HERO */
+.hero-doacoes {
+  background: linear-gradient(to right, rgba(16,185,129,0.7), rgba(16,185,129,0.3)),
+              url("../imagens/imagem2docarrosel.jpg") center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+}
+.hero-texto h1 {
+  color: var(--branco);
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.hero-texto p {
+  color: #f9fafb;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* 🔹 MOTIVAÇÃO */
+.motivacao {
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+.motivacao h2 {
+  color: var(--verde);
+  margin-bottom: 15px;
+}
+
+/* 🔹 OPÇÕES DE DOAÇÃO */
+.opcoes-doacao {
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  padding: 60px 20px;
+  text-align: center;
+}
+.cards-doacao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px;
+}
+.card {
+  background-color: rgba(16,185,129,0.85);
+  color: var(--branco);
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 0 15px rgba(16,185,129,0.3);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h3 {
+  margin-bottom: 10px;
+}
+.btn-doar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--branco);
+  color: var(--verde);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-doar:hover {
+  background-color: #D1FAE5;
+}
+
+/* 🔹 DADOS BANCÁRIOS */
+.dados-bancarios {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(255,255,255,0.6);
+}
+.dados p {
+  font-weight: 600;
+  margin: 5px 0;
+}
+.agradecimento {
+  margin-top: 20px;
+  color: var(--verde);
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* 🔹 TESTEMUNHOS */
+.testemunhos {
+  background: var(--verde);
+  color: var(--branco);
+  text-align: center;
+  padding: 60px 20px;
+}
+.cards-testemunhos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px;
+}
+.testemunho {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-style: italic;
+}
+
+/* 🔹 RODAPÉ */
+footer {
+  background-color: #0f766e;
+  color: var(--branco);
+  text-align: center;
+  padding: 15px;
+}
+/* 🔹 SEÇÃO DE IMPACTO */
+.impacto {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #10B981, #16A34A);
+  color: #fff;
+}
+
+.impacto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.impacto p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #EDE3CC;
+}
+
+/* 🔹 CONTAINER */
+.container-impacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* 🔹 CARDS */
+.card-impacto {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  width: 180px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.card-impacto:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔹 NÚMEROS */
+.contador {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* 🔹 TEXTO DO CARD */
+.card-impacto p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #D1FAE5;
+}
+
+/* 🔹 RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .container-impacto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

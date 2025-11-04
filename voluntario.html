@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T+ | Voluntários</title>
+
+  <!-- Fonte global -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS exclusivo da página -->
+  <link rel="stylesheet" href="css/voluntarios.css">
+</head>
+<body>
+
+  <!-- 🔹 HEADER (mesmo padrão das outras páginas) -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="imagens/logo.png" alt="Logo T+" class="logo-tmais">
+      </div>
+
+      <ul class="menu">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="voluntarios.html" class="ativo">Voluntários</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔹 SEÇÃO HERO -->
+  <section class="hero-voluntario">
+    <div class="hero-texto">
+      <h1>Seja um Voluntário T+</h1>
+      <p>Faça parte de um movimento que transforma vidas com empatia, fé e propósito.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 SEÇÃO SOBRE O VOLUNTARIADO -->
+  <section class="sobre">
+    <h2>Por que ser voluntário?</h2>
+    <p>
+      Ser voluntário é oferecer tempo, talento e amor para quem precisa.  
+      No T+, acreditamos que cada pessoa pode ser um canal de transformação.  
+      Aqui, você encontra oportunidades reais de servir e crescer espiritualmente.
+    </p>
+  </section>
+
+  <!-- 🔹 SEÇÃO DE ÁREAS DE ATUAÇÃO -->
+  <section class="areas">
+    <h2>Áreas de Atuação</h2>
+    <div class="cards-areas">
+      <div class="card">
+        <h3>Ações Sociais</h3>
+        <p>Participação em campanhas de arrecadação, visitas a comunidades e apoio em eventos solidários.</p>
+      </div>
+      <div class="card">
+        <h3>Educação & Apoio</h3>
+        <p>Atue em projetos educativos, reforço escolar e oficinas para jovens e crianças.</p>
+      </div>
+      <div class="card">
+        <h3>Evangelismo</h3>
+        <p>Compartilhe a Palavra e leve esperança através de ações missionárias e eventos de fé.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 SEÇÃO FORMULÁRIO -->
+  <section class="formulario">
+    <h2>Inscreva-se para ser voluntário</h2>
+    <form action="#" method="post" class="form-voluntario">
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+      <label for="area">Área de Interesse</label>
+      <select id="area" name="area">
+        <option value="">Selecione...</option>
+        <option value="social">Ações Sociais</option>
+        <option value="educacao">Educação & Apoio</option>
+        <option value="evangelismo">Evangelismo</option>
+      </select>
+
+      <label for="mensagem">Por que deseja ser voluntário?</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre você..."></textarea>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </section>
+
+  <!-- 🔹 RODAPÉ -->
+  <footer>
+    <p>© 2025 Transforma+ | Todos os direitos reservados.</p>
+  </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

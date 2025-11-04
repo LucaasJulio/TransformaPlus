@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verde: #10B981;
+  --bege: #EDE3CC;
+  --branco: #fff;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #EDE3CC, #EADFC2);
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: rgba(16, 185, 129, 0.85);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+}
+.logo-tmais {
+  width: 50px;
+}
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.menu .ativo {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero-cadastro {
+  margin-top: 90px;
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(16,185,129,0.2);
+}
+.hero-cadastro h1 {
+  color: var(--verde);
+  font-size: 2rem;
+}
+.hero-cadastro p {
+  margin-top: 10px;
+}
+
+/* FORMULÁRIO */
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.form-cadastro {
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+fieldset {
+  border: 2px solid var(--verde);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+legend {
+  font-weight: bold;
+  color: var(--verde);
+  padding: 0 10px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+input:focus, select:focus {
+  border-color: var(--verde);
+  outline: none;
+}
+.btn-enviar {
+  background-color: var(--verde);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-enviar:hover {
+  background-color: #0f766e;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f766e;
+  color: #fff;
+}

@@ -1,0 +1,353 @@
+/* 🔹 RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h1 h2 h3... */
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: #10B981;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+  font-size: 40px;
+  color: #10B981;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* 🔹 CORES BASE */
+:root {
+  --verde: #10B981;
+  --bege: #EDE3CC;
+  --branco: #FFFFFF;
+  --cinza: #F3F4F6;
+}
+
+/* 🔹 BODY */
+body {
+ background:
+    linear-gradient(to right, rgba(237, 227, 204, 0.9), rgba(16, 185, 129, 0.3)),
+    url("imagens/fundo.svg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+/* 🔹 HEADER MELHORADO */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  /* fundo com efeito vidro suave */
+  background: rgba(16, 185, 129, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+/* 🔹 CONTAINER DO CAMPO DE BUSCA */
+.busca-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 5px 10px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+/* 🔹 CAMPO DE TEXTO */
+.campo-busca {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 0.9rem;
+  padding: 8px;
+  width: 160px;
+  transition: width 0.3s ease;
+}
+
+/* Quando clicar no campo, ele cresce levemente */
+.campo-busca:focus {
+  width: 200px;
+}
+
+/* 🔹 BOTÃO DE BUSCA */
+.btn-busca {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+/* Efeito hover no botão */
+.btn-busca:hover {
+  transform: scale(1.2);
+}
+
+/* 🔹 Ajustes no layout geral */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 10px 60px;
+}
+
+/* 🔹 NAVBAR (container interno) */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+
+/* 🔹 LOGO + TÍTULO */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-tmais {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.logo-tmais:hover {
+  transform: scale(1.1);
+}
+
+.titulo-site {
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* 🔹 MENU */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* efeito de sublinhado animado */
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Hover de cor suave */
+.menu a:hover {
+  color: #D1FAE5;
+}
+
+/* 🔹 LOGO */
+.logo-tmais {
+  width: 45px;
+  height: auto;
+}
+
+/* 🔹 MENU DE NAVEGAÇÃO */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #D1FAE5; /* tom claro de verde */
+}
+
+/* 🔹 HERO */
+.hero {
+  margin-top: 100px; /* espaço por causa do header fixo */
+  padding: 60px 80px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* 🔹 Texto do hero */
+.hero-texto {
+  max-width: 500px;
+}
+.hero-texto h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: #059669 10px;
+}
+.hero-texto p {
+  margin-bottom: 20px;
+  color: #333;
+}
+.btn-cta {
+  background-color: var(--verde);
+  color: var(--branco);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-cta:hover {
+  background-color: #059669;
+}
+
+/* 🔹 Círculo do hero */
+.hero-visual .circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+}
+.hero-visual .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔹 SEÇÃO SOBRE */
+.sobre {
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+  margin: auto;
+  background-color: #F3F4F6;
+}
+.sobre h3 {
+  color: var(--verde);
+  margin-bottom: 15px;
+}
+
+/* 🔹 SEÇÃO PROJETOS */
+.projetos {
+  padding: 60px 40px;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px;
+}
+.card {
+  background-color: var(--branco);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.15);
+  width: 300px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+/* 🔹 CHAMADA FINAL */
+.chamada-final {
+  background-color: var(--verde);
+  color: var(--branco);
+  text-align: center;
+  padding: 60px 20px;
+}
+.chamada-final .botoes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn-sec {
+  background-color: var(--branco);
+  color: var(--verde);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-sec:hover {
+  background-color: #D1FAE5;
+}
+
+/* 🔹 RODAPÉ */
+footer {
+  background-color: #0f766e;
+  color: var(--branco);
+  text-align: center;
+  padding: 15px;
+}
+
+/* responsividade */
+/* 🔹 Responsividade (mobile) */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+/* 🔹 RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .busca-container {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .campo-busca {
+    width: 100%;
+  }
+}
