@@ -7,4 +7,4 @@ Um site responsivo que une tecnologia, empatia e propósito para transformar vid
 
 Para mais detalhes sobre o desenvolvimento, tecnologias e estrutura do projeto, consulte o documento completo:
 
-👉 [**Documentação Técnica – Projeto T+ (Transforma+)**](./Documentacao-TransformaPlus.pdf)
+👉 [**Documentacao-TransformaPlus.pdf**](./Documentacao-TransformaPlus.pdf)
