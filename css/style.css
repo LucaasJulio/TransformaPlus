@@ -26,6 +26,9 @@ h3{
   --bege: #EDE3CC;
   --branco: #FFFFFF;
   --cinza: #F3F4F6;
+  --cinza-claro: #F3F4F6;
+  --cinza-medio: #9CA3AF;
+  --cinza-escuro: #374151;
 }
 
 /* 🔹 BODY */
@@ -351,3 +354,4 @@ footer {
     width: 100%;
   }
 }
+
