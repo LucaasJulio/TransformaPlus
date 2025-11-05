@@ -26,9 +26,6 @@ h3{
   --bege: #EDE3CC;
   --branco: #FFFFFF;
   --cinza: #F3F4F6;
-  --cinza-claro: #F3F4F6;
-  --cinza-medio: #9CA3AF;
-  --cinza-escuro: #374151;
 
   --font-xs: 12px;
   --font-sm: 14px;
@@ -41,7 +38,7 @@ h3{
   --space-3: 24px;
   --space-4: 32px;
   --space-5: 48px;
-  --space-6: 64px;
+  --space-6: 75px;
 }
 
 /* 🔹 BODY */
@@ -281,13 +278,17 @@ nav a:hover {
   padding: 60px 40px;
   text-align: center;
 }
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  width: 100%;
   margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
+
+
 .card {
   background-color: var(--branco);
   border-radius: 15px;
@@ -367,5 +368,3 @@ footer {
     width: 100%;
   }
 }
-
-
