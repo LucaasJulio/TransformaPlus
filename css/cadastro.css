@@ -8,6 +8,9 @@
   --verde: #10B981;
   --bege: #EDE3CC;
   --branco: #fff;
+  --cinza-claro: #F3F4F6;
+  --cinza-medio: #9CA3AF;
+  --cinza-escuro: #374151;
 }
 
 body {
@@ -128,3 +131,4 @@ footer {
   background-color: #0f766e;
   color: #fff;
 }
+
