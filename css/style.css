@@ -29,6 +29,19 @@ h3{
   --cinza-claro: #F3F4F6;
   --cinza-medio: #9CA3AF;
   --cinza-escuro: #374151;
+
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-xl: 28px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
 }
 
 /* 🔹 BODY */
@@ -354,4 +367,5 @@ footer {
     width: 100%;
   }
 }
+
 
