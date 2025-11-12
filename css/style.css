@@ -418,4 +418,31 @@ footer {
   }
 }
 
+.mensagem {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  z-index: 999;
+  animation: aparecer 0.4s ease;
+}
+
+.mensagem.sucesso {
+  background-color: #10b981;
+}
+
+.mensagem.erro {
+  background-color: #ef4444;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
 
